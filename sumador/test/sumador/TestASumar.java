@@ -31,5 +31,15 @@ public class TestASumar {
 		String resultado = sumi.mostrar("-5");
 		assertNull(resultado);
 	}
-
+	/**
+	 * Test para numeros mayores de 9
+	 * 
+	 */
+	@Test 
+	public void testMayor9() {
+		 ASumar sumi = new ASumar();
+	     String resultado = sumi.mostrar("1234");
+	     assertEquals("1234 = 1+2+3+4=10",resultado );
+		
+	}
 }

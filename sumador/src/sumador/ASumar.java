@@ -27,10 +27,33 @@ public class ASumar {
         if (cad.charAt(0)=='-') {
 			return null;
 			}
-        return numero;
+        
+        return (numero + " = " + total(numero));
 
-}
+	}
+	/**
+	 * Método para la suma de los dígitos en valores mayores de 9
+	 * @param valor_inicial numero a sumar
+	 * @return devuelve el resultado de la suma de los dígitos
+	 */
+	 public int total(String valor_inicial) {
+	        int suma = 0;
+	        String valorInicial = "";
+	        for (int i = 0; i < valor_inicial.length(); i++) {
+	            String digito = valor_inicial.substring(i, i+1);
+	            if(i > 0) { 
+	            	valorInicial = valorInicial + " + " + digito;
+	            }else{
+	            	valorInicial = digito;
+	            }
+	            
+	            suma = suma + Integer.parseInt(digito);
+	            
+	        }
+	        return suma;
 
+	    }
+	
 
 	
 
