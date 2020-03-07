@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import org.junit.Test;
+
 /**
  * Clase JUnit para los test de pruebas
  * @author J M
