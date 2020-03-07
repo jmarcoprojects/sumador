@@ -21,5 +21,15 @@ public class TestASumar {
         String resultado = sumi.mostrar("5");
         assertEquals("5 = 5",resultado );
     }
+	
+	/**
+	 * Test para número negativo
+	 */
+	@Test
+	public void testValorNegativo() {
+		ASumar sumi = new ASumar();
+		String resultado = sumi.mostrar("-5");
+		assertNull(resultado);
+	}
 
 }
